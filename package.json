@@ -1,0 +1,19 @@
+{
+  "name": "fibergo_1",
+  "version": "1.0.0",
+  "description": "fibergo 1st",
+  "main": "main.go",
+  "scripts": {
+    "test": "nodemon --exec go run cmd/main.go"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/XyNeTx/FiberGo_1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/XyNeTx/FiberGo_1/issues"
+  },
+  "homepage": "https://github.com/XyNeTx/FiberGo_1#readme"
+}
