@@ -39,6 +39,13 @@ func main() {
 		return c.JSON(emp)
 	})
 
+	app.Get("/Employees", func(c *fiber.Ctx) error {
+		var empList []model.Employee
+		empList, _ = service.GetEmployeeList()
+		//fmt.Println(empList)
+		return c.JSON(empList)
+	})
+
 	app.Post("/Employees", func(c *fiber.Ctx) error {
 		var emp model.Employee
 		if err := c.BodyParser(&emp); err != nil {
@@ -49,5 +56,5 @@ func main() {
 		return c.JSON(emp)
 	})
 
-	app.Listen(":3000")
+	app.Listen(":8080")
 }

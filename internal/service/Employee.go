@@ -29,3 +29,26 @@ func GetEmployeeByID(id string) (model.Employee, error) {
 	}
 	return emp, nil
 }
+
+func GetEmployeeList() ([]model.Employee, error) {
+
+	empList := []model.Employee{}
+
+	empList = append(empList, model.Employee{
+		EmployeeID: "1",
+		Name:       "John Doe",
+		Age:        30,
+		Email:      "vO4l3@example.com",
+		Salary:     50000,
+	})
+
+	empList = append(empList, model.Employee{
+		EmployeeID: "2",
+		Name:       "Jane Doe",
+		Age:        25,
+		Email:      "oV4e9@example.com",
+		Salary:     60000,
+	})
+
+	return empList, nil
+}
